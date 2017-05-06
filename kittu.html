@@ -1,0 +1,41 @@
+<html>
+<head><title>Keeru's Food Corner!!</title></head>
+<body>
+<ul><b><i>
+<li>Sambar Idly</li>
+<li>Masala Dosa</li>
+<li>Onion Rava</li>
+<li>Five Vegetables Uthappam</li>
+<li>Poori Masala</li>
+<li>Butter Naan and Pulka with
+<ul><li>Panner Butter Masala</li>
+<li>Aloo Mutter</li>
+<li>Gobi Bindi Masala</li>
+<li>Mushroom Manchurian</li></ul>
+</li>
+<li>Veg.Fried Rice</li>
+<li>Bisibelabath</li>
+<li>Curd Rice</li></b></i>
+
+</ul>
+<form action="#" onsubmit="return false">
+<input id="soru" />
+<button id="addb"type="submit">Add!</button>
+</form>
+<ul id="soru-items">
+SORU items are
+</ul>
+<script>
+var input=document.getElementById("soru")
+console.log(input)
+var list=document.getElementById("soru-items")
+var inpu=document.getElementById('addb')
+inpu.addEventListener('click',function(){
+var value=input.value
+var item=document.createElement('li')
+item.innerHTML=value
+list.appendChild(item)
+})
+</script>
+</body>
+</html>
